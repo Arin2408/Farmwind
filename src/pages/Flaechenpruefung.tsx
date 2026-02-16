@@ -62,7 +62,7 @@ export default function Flaechenpruefung() {
   return (
     <div className="min-h-screen bg-white">
       {/* Map Section */}
-      <section className="w-full h-[400px] lg:h-[500px] relative overflow-hidden pt-32">
+      <section className="w-full h-[600px] lg:h-[800px] relative overflow-hidden pt-32">
         <img
           src="/assets/map.jpg"
           alt="Map of Schleswig-Holstein"

@@ -96,7 +96,7 @@ export default function Home() {
             >
               <div className="aspect-[16/10] overflow-hidden">
                 <img
-                  src="/assets/map-germany.jpg"
+                  src="/assets/map.jpg"
                   alt="Map of Germany showing Schleswig-Holstein"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
