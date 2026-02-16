@@ -65,14 +65,14 @@ export default function Landeigentuemer() {
           <div className="w-full lg:w-1/2 flex gap-4 h-[500px] animate-on-scroll">
             <div className="w-1/2 h-full rounded-sm overflow-hidden relative">
               <img
-                src="https://placehold.co/600x800/e0a800/ffffff?text=Golden+Field"
+                src="/assets/golden.jpg"
                 alt="Golden wheat field at sunset"
                 className="absolute inset-0 w-full h-full object-cover"
               />
             </div>
             <div className="w-1/2 h-full rounded-sm overflow-hidden relative mt-12 lg:mt-24">
               <img
-                src="https://placehold.co/600x800/1a1a1a/ffffff?text=Wind+Turbines"
+                src="/assets/darkwind.jpg"
                 alt="Dark wind turbines"
                 className="absolute inset-0 w-full h-full object-cover grayscale contrast-125"
               />
