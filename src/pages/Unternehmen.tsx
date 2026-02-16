@@ -239,9 +239,11 @@ export default function Unternehmen() {
           {/* Kai Olufs */}
           <div className="flex flex-col md:flex-row gap-12 items-start animate-on-scroll">
             <div className="w-full md:w-1/3 aspect-square bg-[#f0f0f0] rounded-sm overflow-hidden">
-              <div className="w-full h-full bg-gray-200 flex items-center justify-center text-gray-400">
-                <span className="text-6xl">👤</span>
-              </div>
+              <img
+                src="/assets/Kai-olufs.png"
+                alt="Kai Olufs"
+                className="w-full h-full object-cover"
+              />
             </div>
             <div className="w-full md:w-2/3">
               <h3 className="text-2xl font-bold text-gray-900 mb-1">Kai Olufs</h3>
