@@ -91,7 +91,7 @@ export default function Unternehmen() {
               <img
                 src="/assets/thomas-griffith.jpg"
                 alt="Thomas Griffith"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover grayscale"
               />
             </div>
             <div className="w-full md:w-2/3">
@@ -120,7 +120,7 @@ export default function Unternehmen() {
               <img
                 src="/assets/arne.jpg"
                 alt="Dipl. Ing. Arne Henn"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover grayscale"
               />
             </div>
             <div className="w-full md:w-2/3">
@@ -146,7 +146,7 @@ export default function Unternehmen() {
               <img
                 src="/assets/CJ-2.jpg"
                 alt="Carsten Jensen"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover grayscale"
               />
             </div>
             <div className="w-full md:w-2/3">
@@ -171,7 +171,7 @@ export default function Unternehmen() {
               <img
                 src="/assets/kristian-schachlewitz.png"
                 alt="Kristian Schachlewitz"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover grayscale"
               />
             </div>
             <div className="w-full md:w-2/3">
@@ -194,7 +194,7 @@ export default function Unternehmen() {
               <img
                 src="/assets/arne-scheschonk.png"
                 alt="Dr. Arne Scheschonk"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover grayscale"
               />
             </div>
             <div className="w-full md:w-2/3">
@@ -218,7 +218,7 @@ export default function Unternehmen() {
               <img
                 src="/assets/LPJ2-2.jpg"
                 alt="Lorenz Peter Jensen"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover grayscale"
               />
             </div>
             <div className="w-full md:w-2/3">
@@ -242,7 +242,7 @@ export default function Unternehmen() {
               <img
                 src="/assets/Kai-olufs.png"
                 alt="Kai Olufs"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover grayscale"
               />
             </div>
             <div className="w-full md:w-2/3">
