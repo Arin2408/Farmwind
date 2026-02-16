@@ -66,6 +66,7 @@ export default function Flaechenpruefung() {
         <img
           src="/assets/map.jpg"
           alt="Map of Schleswig-Holstein"
+          loading="lazy"
           className="w-full h-full object-cover grayscale contrast-125 opacity-80"
         />
       </section>
@@ -188,8 +189,8 @@ export default function Flaechenpruefung() {
                   className="w-full p-3 border border-gray-400 rounded-md focus:outline-none focus:border-[#1E5D48] focus:ring-1 focus:ring-[#1E5D48]"
                 >
                   <option value="">Flur vorhanden</option>
-                  <option value="yes">Ja</option>
-                  <option value="no">Nein</option>
+                  <option value="yes">Flur vorhanden, keine Flurnummer</option>
+                  <option value="no">Flur nicht vorhanden</option>
                 </select>
               </div>
 
@@ -228,7 +229,7 @@ export default function Flaechenpruefung() {
                 >
                   <option value="">Bitte auswählen...</option>
                   <option value="agriculture">Landwirtschaft</option>
-                  <option value="pasture">Weideland</option>
+                  {/* <option value="pasture">Weideland</option> */}
                   <option value="forest">Forstwirtschaft</option>
                   <option value="other">Sonstiges</option>
                 </select>

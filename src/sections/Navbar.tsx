@@ -21,12 +21,19 @@ export default function Navbar({ onNavigate, currentPage }: NavbarProps) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   useEffect(() => {
+    let animationFrameId: number;
+
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      animationFrameId = requestAnimationFrame(() => {
+        setIsScrolled(window.scrollY > 50);
+      });
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      cancelAnimationFrame(animationFrameId);
+    };
   }, []);
 
   const handleNavClick = (page: Page) => {

@@ -77,7 +77,7 @@ export default function Unternehmen() {
       </section>
 
       {/* Team Section */}
-      <section id="team" className="py-24 px-6 lg:px-12 max-w-[1400px] mx-auto">
+      <section id="team" className="py-12 lg:py-24 px-6 lg:px-12 max-w-[1400px] mx-auto">
         <h2 className="text-4xl sm:text-5xl font-medium text-[#1E5D48] mb-16 animate-on-scroll">
           Die Menschen
           <br />
@@ -91,6 +91,7 @@ export default function Unternehmen() {
               <img
                 src="/assets/thomas-griffith.jpg"
                 alt="Thomas Griffith"
+                loading="lazy"
                 className="w-full h-full object-cover grayscale"
               />
             </div>
@@ -120,6 +121,7 @@ export default function Unternehmen() {
               <img
                 src="/assets/arne.jpg"
                 alt="Dipl. Ing. Arne Henn"
+                loading="lazy"
                 className="w-full h-full object-cover grayscale"
               />
             </div>
@@ -146,6 +148,7 @@ export default function Unternehmen() {
               <img
                 src="/assets/CJ-2.jpg"
                 alt="Carsten Jensen"
+                loading="lazy"
                 className="w-full h-full object-cover grayscale"
               />
             </div>
@@ -171,6 +174,7 @@ export default function Unternehmen() {
               <img
                 src="/assets/kristian-schachlewitz.png"
                 alt="Kristian Schachlewitz"
+                loading="lazy"
                 className="w-full h-full object-cover grayscale"
               />
             </div>
@@ -194,6 +198,7 @@ export default function Unternehmen() {
               <img
                 src="/assets/arne-scheschonk.png"
                 alt="Dr. Arne Scheschonk"
+                loading="lazy"
                 className="w-full h-full object-cover grayscale"
               />
             </div>
@@ -218,6 +223,7 @@ export default function Unternehmen() {
               <img
                 src="/assets/LPJ2-2.jpg"
                 alt="Lorenz Peter Jensen"
+                loading="lazy"
                 className="w-full h-full object-cover grayscale"
               />
             </div>
@@ -242,6 +248,7 @@ export default function Unternehmen() {
               <img
                 src="/assets/Kai-olufs.png"
                 alt="Kai Olufs"
+                loading="lazy"
                 className="w-full h-full object-cover grayscale"
               />
             </div>

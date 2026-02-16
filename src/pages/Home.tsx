@@ -10,19 +10,26 @@ export default function Home() {
   const imageRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    let animationFrameId: number;
+
     const handleScroll = () => {
-      if (heroRef.current) {
-        const scrollY = window.scrollY;
-        const heroHeight = heroRef.current.offsetHeight;
-        const opacity = Math.max(0, 1 - scrollY / (heroHeight * 0.5));
-        const translateY = scrollY * 0.3;
-        heroRef.current.style.opacity = String(opacity);
-        heroRef.current.style.transform = `translateY(${translateY}px)`;
-      }
+      animationFrameId = requestAnimationFrame(() => {
+        if (heroRef.current) {
+          const scrollY = window.scrollY;
+          const heroHeight = heroRef.current.offsetHeight;
+          const opacity = Math.max(0, 1 - scrollY / (heroHeight * 0.5));
+          const translateY = scrollY * 0.3;
+          heroRef.current.style.opacity = String(opacity);
+          heroRef.current.style.transform = `translateY(${translateY}px)`;
+        }
+      });
     };
 
     window.addEventListener('scroll', handleScroll, { passive: true });
-    return () => window.removeEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+      cancelAnimationFrame(animationFrameId);
+    };
   }, []);
 
   const handleNavClick = (page: Page) => {
@@ -70,6 +77,7 @@ export default function Home() {
           <img
             src="/assets/wind-turbines.jpg"
             alt="Wind turbines in green fields"
+            loading="lazy"
             className="w-full h-auto object-cover"
           />
         </div>
@@ -85,7 +93,7 @@ export default function Home() {
       </section>
 
       {/* Bento Grid Section */}
-      <section className="py-12 pb-24 lg:pb-32 px-6 lg:px-12 bg-white">
+      <section className="py-12 lg:py-32 px-6 lg:px-12 bg-white">
         <div className="max-w-[1400px] mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-6">
             {/* Map Card - Spans 3 columns */}
@@ -98,6 +106,7 @@ export default function Home() {
                 <img
                   src="/assets/map.jpg"
                   alt="Map of Germany showing Schleswig-Holstein"
+                  loading="lazy"
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
               </div>
