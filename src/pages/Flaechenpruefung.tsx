@@ -64,7 +64,7 @@ export default function Flaechenpruefung() {
       {/* Map Section */}
       <section className="w-full h-[400px] lg:h-[500px] relative overflow-hidden pt-32">
         <img
-          src="https://placehold.co/1920x600/e0e0e0/555555?text=Map+of+Schleswig-Holstein"
+          src="/assets/map.jpg"
           alt="Map of Schleswig-Holstein"
           className="w-full h-full object-cover grayscale contrast-125 opacity-80"
         />
