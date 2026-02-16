@@ -101,7 +101,7 @@ export default function Flaechenpruefung() {
                   <option value="">Bitte auswählen...</option>
                   <option value="wind">Windenergie</option>
                   <option value="solar">Photovoltaik</option>
-                  <option value="both">Beides</option>
+                  {/* <option value="both">Beides</option> */}
                 </select>
               </div>
 
@@ -115,9 +115,22 @@ export default function Flaechenpruefung() {
                   className="w-full p-3 border border-gray-400 rounded-md focus:outline-none focus:border-[#1E5D48] focus:ring-1 focus:ring-[#1E5D48]"
                 >
                   <option value="">Bitte auswählen...</option>
-                  <option value="sh">Schleswig-Holstein</option>
-                  <option value="nds">Niedersachsen</option>
-                  <option value="other">Anderes</option>
+                  <option value="Baden-Württemberg">Baden-Württemberg</option>
+                  <option value="Bayern">Bayern</option>
+                  <option value="Berlin">Berlin</option>
+                  <option value="Brandenburg">Brandenburg</option>
+                  <option value="Bremen">Bremen</option>
+                  <option value="Hamburg">Hamburg</option>
+                  <option value="Hessen">Hessen</option>
+                  <option value="Mecklenburg-Vorpommern">Mecklenburg-Vorpommern</option>
+                  <option value="Niedersachsen">Niedersachsen</option>
+                  <option value="Nordrhein-Westfalen">Nordrhein-Westfalen</option>
+                  <option value="Rheinland-Pfalz">Rheinland-Pfalz</option>
+                  <option value="Saarland">Saarland</option>
+                  <option value="Sachsen">Sachsen</option>
+                  <option value="Sachsen-Anhalt">Sachsen-Anhalt</option>
+                  <option value="Schleswig-Holstein">Schleswig-Holstein</option>
+                  <option value="Thüringen">Thüringen</option>
                 </select>
                 <p className="text-sm text-gray-600 mt-1">
                   Hinweis: Für eine Anfrage von weiteren Flurstücken in einem anderen Bundesland oder Landkreis bitten wir Sie um eine separate Flächenprüfanfrage mittels dieses Formulars. Wie viele Flurstücke möchten Sie angeben?
