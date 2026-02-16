@@ -62,7 +62,7 @@ export default function Flaechenpruefung() {
   return (
     <div className="min-h-screen bg-white">
       {/* Map Section */}
-      <section className="w-full h-[600px] lg:h-[800px] relative overflow-hidden pt-32">
+      <section className="w-full h-[500px] sm:h-[600px] lg:h-[800px] relative overflow-hidden pt-32">
         <img
           src="/assets/map.jpg"
           alt="Map of Schleswig-Holstein"
@@ -71,9 +71,9 @@ export default function Flaechenpruefung() {
         />
       </section>
 
-      <section className="py-16 px-6 lg:px-12 max-w-[1000px] mx-auto">
+      <section className="py-12 px-6 lg:px-12 w-full max-w-[1000px] mx-auto">
         <div className="animate-on-scroll">
-          <h1 className="text-4xl sm:text-5xl font-medium text-[#1E5D48] mb-12">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-medium text-[#1E5D48] mb-8 lg:mb-12 break-words">
             Flächenprüfung
           </h1>
 
@@ -313,8 +313,8 @@ export default function Flaechenpruefung() {
       </section>
 
       {/* Partner Section */}
-      <section className="py-24 px-6 lg:px-12 max-w-[1400px] mx-auto animate-on-scroll">
-        <h2 className="text-4xl sm:text-5xl font-medium text-[#1E5D48] mb-12">
+      <section className="py-12 lg:py-24 px-6 lg:px-12 max-w-[1400px] mx-auto animate-on-scroll">
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-medium text-[#1E5D48] mb-8 lg:mb-12">
           farmWIND als
           <br />
           Kooperationspartner:
@@ -322,9 +322,9 @@ export default function Flaechenpruefung() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
           {/* Partner Concept */}
-          <div className="bg-[#1E5D48] text-white p-12 rounded-sm shadow-xl">
-            <h3 className="text-3xl font-medium mb-2">farmWIND</h3>
-            <h3 className="text-3xl font-medium mb-8">Partnerkonzept</h3>
+          <div className="bg-[#1E5D48] text-white p-8 lg:p-12 rounded-sm shadow-xl">
+            <h3 className="text-2xl lg:text-3xl font-medium mb-2">farmWIND</h3>
+            <h3 className="text-2xl lg:text-3xl font-medium mb-8">Partnerkonzept</h3>
             <ul className="space-y-3 list-disc pl-5 text-lg">
               <li>Verpachten war gestern! Der Landeigentümer als Partner</li>
               <li>Maßgeschneiderte und individuelle Konzepte</li>
@@ -336,7 +336,7 @@ export default function Flaechenpruefung() {
           </div>
 
           {/* Partner Knowhow */}
-          <div className="bg-[#1E5D48] text-white p-12 rounded-sm shadow-xl">
+          <div className="bg-[#1E5D48] text-white p-8 lg:p-12 rounded-sm shadow-xl">
             <h3 className="text-3xl font-medium mb-2">farmWIND</h3>
             <h3 className="text-3xl font-medium mb-8">Knowhow</h3>
             <ul className="space-y-3 list-disc pl-5 text-lg">
