@@ -37,17 +37,19 @@ export default function Referenzen() {
 
       {/* Map Section */}
       <section className="px-6 lg:px-12 max-w-[1400px] mx-auto mb-24 animate-on-scroll">
-        <div className="w-full aspect-[16/9] lg:aspect-[2/1] rounded-sm overflow-hidden relative bg-[#2a2a2a]">
-          {/* Placeholder for the project map */}
-          <img
-            src="https://placehold.co/1600x800/2a2a2a/ffffff?text=Map+of+Projects"
-            alt="Map of Wind Projects"
-            className="w-full h-full object-cover opacity-80"
-          />
-          {/* Overlay simulation for markers (optional visual polish) */}
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white/20 text-9xl select-none">
-            +
-          </div>
+        <div className="w-full rounded-sm overflow-hidden relative bg-[#2a2a2a]">
+          <iframe
+            src="https://my.atlist.com/map/82082a1a-9ee9-4a03-a27f-fe6a5d97edaf?share=true"
+            allow="geolocation 'self' https://my.atlist.com"
+            width="100%"
+            height="400px"
+            loading="lazy"
+            frameBorder="0"
+            scrolling="no"
+            allowFullScreen
+            id="atlist-embed"
+            className="w-full h-[400px] lg:h-[600px]"
+          ></iframe>
         </div>
       </section>
 
