@@ -39,8 +39,8 @@ export default function Navbar({ onNavigate, currentPage }: NavbarProps) {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 custom-expo ${isScrolled
-          ? 'bg-white/90 backdrop-blur-xl shadow-sm'
-          : 'bg-transparent'
+        ? 'bg-white/90 backdrop-blur-xl shadow-sm'
+        : 'bg-transparent'
         }`}
     >
       <nav className="max-w-[1400px] mx-auto px-6 lg:px-12">
@@ -52,7 +52,7 @@ export default function Navbar({ onNavigate, currentPage }: NavbarProps) {
             style={{ animationDelay: '0s' }}
           >
             <img
-              src="/assets/logo.png"
+              src="/assets/farmwindlogo.svg"
               alt="farmWIND"
               className="h-14 w-auto transition-transform duration-300 group-hover:scale-105"
             />
@@ -65,8 +65,8 @@ export default function Navbar({ onNavigate, currentPage }: NavbarProps) {
                 key={link.page}
                 onClick={() => handleNavClick(link.page)}
                 className={`relative text-[15px] font-medium transition-all duration-300 animate-fade-in-up ${isActive(link.page)
-                    ? 'text-[#3A6B54]'
-                    : 'text-gray-700 hover:text-[#3A6B54]'
+                  ? 'text-[#3A6B54]'
+                  : 'text-gray-700 hover:text-[#3A6B54]'
                   }`}
                 style={{ animationDelay: `${0.2 + index * 0.1}s` }}
               >
@@ -109,8 +109,8 @@ export default function Navbar({ onNavigate, currentPage }: NavbarProps) {
                 key={link.page}
                 onClick={() => handleNavClick(link.page)}
                 className={`text-base font-medium transition-colors text-left ${isActive(link.page)
-                    ? 'text-[#3A6B54]'
-                    : 'text-gray-700 hover:text-[#3A6B54]'
+                  ? 'text-[#3A6B54]'
+                  : 'text-gray-700 hover:text-[#3A6B54]'
                   }`}
               >
                 {link.name}
