@@ -69,7 +69,7 @@ export default function Unternehmen() {
         {/* Right Image */}
         <div className="w-full lg:w-1/2 h-[400px] lg:h-auto relative">
           <img
-            src="https://placehold.co/1200x800/1E5D48/ffffff?text=Wind+Turbines"
+            src="/assets/wind-turbines.jpg"
             alt="Wind turbines landscape"
             className="absolute inset-0 w-full h-full object-cover"
           />
