@@ -24,7 +24,7 @@ export default function Unternehmen() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="flex flex-col lg:flex-row min-h-[600px] pt-32">
+      <section className="flex flex-col lg:flex-row min-h-[600px] pt-20 lg:pt-32">
         {/* Left Content */}
         <div className="w-full lg:w-1/2 bg-[#1E5D48] text-white p-8 lg:p-16 flex flex-col justify-center">
           <div className="max-w-xl mx-auto lg:mx-0 animate-on-scroll">

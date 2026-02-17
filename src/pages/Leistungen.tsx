@@ -64,13 +64,13 @@ export default function Leistungen({ onNavigate }: LeistungenProps) {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section with Image and Gradient Overlay */}
-      <section className="relative w-full pt-32">
-        <div className="relative aspect-[16/9] lg:aspect-[2.5/1] overflow-hidden">
+      <section className="relative w-full pt-20 lg:pt-32">
+        <div className="relative min-h-[50vh] lg:min-h-[600px] overflow-hidden flex items-center">
           {/* Background Image */}
           <img
             src="/assets/hero-leistungen.jpg"
             alt="Wind turbines"
-            className="w-full h-full object-cover"
+            className="absolute inset-0 w-full h-full object-cover"
           />
           {/* Green Gradient Overlay */}
           <div
@@ -80,7 +80,7 @@ export default function Leistungen({ onNavigate }: LeistungenProps) {
             }}
           />
           {/* Hero Text */}
-          <div className="absolute inset-0 flex items-center">
+          <div className="relative z-10 w-full py-12 lg:py-0">
             <div className="max-w-[1400px] mx-auto px-6 lg:px-12 w-full">
               <div className="max-w-xl animate-fade-in-up">
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-medium text-white leading-tight">

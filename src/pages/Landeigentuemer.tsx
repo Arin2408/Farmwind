@@ -34,7 +34,7 @@ export default function Landeigentuemer() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="pt-32 pb-24 px-6 lg:px-12 max-w-[1400px] mx-auto">
+      <section className="pt-20 lg:pt-32 pb-24 px-6 lg:px-12 max-w-[1400px] mx-auto">
         <div className="flex flex-col lg:flex-row gap-16 items-center">
           {/* Left Text Content */}
           <div className="w-full lg:w-1/2 animate-on-scroll">

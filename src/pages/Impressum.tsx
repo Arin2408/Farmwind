@@ -3,7 +3,7 @@
 export default function Impressum() {
   return (
     <div className="min-h-screen bg-white">
-      <section className="pt-32 pb-16 px-6 lg:px-12">
+      <section className="pt-20 lg:pt-32 pb-16 px-6 lg:px-12">
         <div className="max-w-[1400px] mx-auto">
           <div className="w-full animate-fade-in-up">
             <h1 className="text-4xl sm:text-5xl font-medium text-[#3A6B54] leading-tight mb-12">

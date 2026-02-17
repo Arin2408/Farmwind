@@ -40,7 +40,7 @@ export default function Home() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="min-h-screen flex items-center pt-20 px-6 lg:px-12">
+      <section className="min-h-[50vh] lg:min-h-screen flex items-center pt-20 lg:pt-32 px-6 lg:px-12">
         <div className="max-w-[1400px] mx-auto w-full">
           <div ref={heroRef} className="max-w-4xl">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-medium text-[#3A6B54] leading-tight">

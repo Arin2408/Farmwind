@@ -29,7 +29,7 @@ export default function Referenzen() {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <section className="pt-32 px-6 lg:px-12 max-w-[1400px] mx-auto animate-on-scroll">
+      <section className="pt-20 lg:pt-32 px-6 lg:px-12 max-w-[1400px] mx-auto animate-on-scroll">
         <h1 className="text-4xl sm:text-5xl font-bold text-[#1E5D48] tracking-wide mb-12 uppercase">
           PROJEKTE
         </h1>
