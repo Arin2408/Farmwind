@@ -29,11 +29,7 @@ export default function Unternehmen() {
         <div className="w-full lg:w-1/2 bg-[#1E5D48] text-white p-8 lg:p-16 flex flex-col justify-center">
           <div className="max-w-xl mx-auto lg:mx-0 animate-on-scroll">
             <h1 className="text-4xl sm:text-5xl lg:text-6xl font-medium leading-tight mb-8">
-              farmWIND:
-              <br />
-              Wer wir sind und was
-              <br />
-              wir tun
+              farmWIND: Wer wir sind und was wir tun
             </h1>
             <div className="space-y-6 text-lg font-light leading-relaxed opacity-90">
               <p>
@@ -87,7 +83,7 @@ export default function Unternehmen() {
         <div className="space-y-24">
           {/* Thomas Griffith */}
           <div className="flex flex-col md:flex-row gap-12 items-start animate-on-scroll">
-            <div className="w-full md:w-1/3 aspect-square bg-[#f0f0f0] rounded-sm overflow-hidden">
+            <div className="w-full md:w-1/4 max-w-xs aspect-square bg-[#f0f0f0] rounded-sm overflow-hidden">
               <img
                 src="/assets/thomas-griffith.jpg"
                 alt="Thomas Griffith"
@@ -95,7 +91,7 @@ export default function Unternehmen() {
                 className="w-full h-full object-cover grayscale"
               />
             </div>
-            <div className="w-full md:w-2/3">
+            <div className="w-full md:w-3/4">
               <h3 className="text-2xl font-bold text-gray-900 mb-1">Thomas Griffith</h3>
               <p className="text-gray-600 mb-8">Gesellschafter</p>
               <div className="text-gray-700 leading-relaxed text-lg space-y-4">
@@ -117,7 +113,7 @@ export default function Unternehmen() {
 
           {/* Arne Henn */}
           <div className="flex flex-col md:flex-row gap-12 items-start animate-on-scroll">
-            <div className="w-full md:w-1/3 aspect-square bg-[#f0f0f0] rounded-sm overflow-hidden">
+            <div className="w-full md:w-1/4 max-w-xs aspect-square bg-[#f0f0f0] rounded-sm overflow-hidden">
               <img
                 src="/assets/arne.jpg"
                 alt="Dipl. Ing. Arne Henn"
@@ -125,7 +121,7 @@ export default function Unternehmen() {
                 className="w-full h-full object-cover grayscale"
               />
             </div>
-            <div className="w-full md:w-2/3">
+            <div className="w-full md:w-3/4">
               <h3 className="text-2xl font-bold text-gray-900 mb-1">Dipl. Ing. Arne Henn</h3>
               <p className="text-gray-600 mb-8">Gesellschafter-Geschäftsführer</p>
               <div className="text-gray-700 leading-relaxed text-lg space-y-4">
@@ -144,7 +140,7 @@ export default function Unternehmen() {
 
           {/* Carsten Jensen */}
           <div className="flex flex-col md:flex-row gap-12 items-start animate-on-scroll">
-            <div className="w-full md:w-1/3 aspect-square bg-[#f0f0f0] rounded-sm overflow-hidden">
+            <div className="w-full md:w-1/4 max-w-xs aspect-square bg-[#f0f0f0] rounded-sm overflow-hidden">
               <img
                 src="/assets/CJ-2.jpg"
                 alt="Carsten Jensen"
@@ -152,7 +148,7 @@ export default function Unternehmen() {
                 className="w-full h-full object-cover grayscale"
               />
             </div>
-            <div className="w-full md:w-2/3">
+            <div className="w-full md:w-3/4">
               <h3 className="text-2xl font-bold text-gray-900 mb-1">Carsten Jensen</h3>
               <p className="text-gray-600 mb-8">Gesellschafter</p>
               <div className="text-gray-700 leading-relaxed text-lg space-y-4">
@@ -170,7 +166,7 @@ export default function Unternehmen() {
 
           {/* Kristian Schachlewitz */}
           <div className="flex flex-col md:flex-row gap-12 items-start animate-on-scroll">
-            <div className="w-full md:w-1/3 aspect-square bg-[#f0f0f0] rounded-sm overflow-hidden">
+            <div className="w-full md:w-1/4 max-w-xs aspect-square bg-[#f0f0f0] rounded-sm overflow-hidden">
               <img
                 src="/assets/kristian-schachlewitz.png"
                 alt="Kristian Schachlewitz"
@@ -178,7 +174,7 @@ export default function Unternehmen() {
                 className="w-full h-full object-cover grayscale"
               />
             </div>
-            <div className="w-full md:w-2/3">
+            <div className="w-full md:w-3/4">
               <h3 className="text-2xl font-bold text-gray-900 mb-1">Kristian Schachlewitz</h3>
               <p className="text-gray-600 mb-8">Gesellschafter & Prokurist</p>
               <div className="text-gray-700 leading-relaxed text-lg space-y-4">
@@ -194,7 +190,7 @@ export default function Unternehmen() {
 
           {/* Dr. Arne Scheschonk */}
           <div className="flex flex-col md:flex-row gap-12 items-start animate-on-scroll">
-            <div className="w-full md:w-1/3 aspect-square bg-[#f0f0f0] rounded-sm overflow-hidden">
+            <div className="w-full md:w-1/4 max-w-xs aspect-square bg-[#f0f0f0] rounded-sm overflow-hidden">
               <img
                 src="/assets/arne-scheschonk.png"
                 alt="Dr. Arne Scheschonk"
@@ -202,7 +198,7 @@ export default function Unternehmen() {
                 className="w-full h-full object-cover grayscale"
               />
             </div>
-            <div className="w-full md:w-2/3">
+            <div className="w-full md:w-3/4">
               <h3 className="text-2xl font-bold text-gray-900 mb-1">Dr. Arne Scheschonk</h3>
               <p className="text-gray-600 mb-8">Gesellschafter</p>
               <div className="text-gray-700 leading-relaxed text-lg space-y-4">
@@ -219,7 +215,7 @@ export default function Unternehmen() {
 
           {/* Lorenz Peter Jensen */}
           <div className="flex flex-col md:flex-row gap-12 items-start animate-on-scroll">
-            <div className="w-full md:w-1/3 aspect-square bg-[#f0f0f0] rounded-sm overflow-hidden">
+            <div className="w-full md:w-1/4 max-w-xs aspect-square bg-[#f0f0f0] rounded-sm overflow-hidden">
               <img
                 src="/assets/LPJ2-2.jpg"
                 alt="Lorenz Peter Jensen"
@@ -227,7 +223,7 @@ export default function Unternehmen() {
                 className="w-full h-full object-cover grayscale"
               />
             </div>
-            <div className="w-full md:w-2/3">
+            <div className="w-full md:w-3/4">
               <h3 className="text-2xl font-bold text-gray-900 mb-1">Lorenz Peter Jensen</h3>
               <p className="text-gray-600 mb-8">Gesellschafter</p>
               <div className="text-gray-700 leading-relaxed text-lg space-y-4">
@@ -244,7 +240,7 @@ export default function Unternehmen() {
 
           {/* Kai Olufs */}
           <div className="flex flex-col md:flex-row gap-12 items-start animate-on-scroll">
-            <div className="w-full md:w-1/3 aspect-square bg-[#f0f0f0] rounded-sm overflow-hidden">
+            <div className="w-full md:w-1/4 max-w-xs aspect-square bg-[#f0f0f0] rounded-sm overflow-hidden">
               <img
                 src="/assets/Kai-olufs.png"
                 alt="Kai Olufs"
@@ -252,7 +248,7 @@ export default function Unternehmen() {
                 className="w-full h-full object-cover grayscale"
               />
             </div>
-            <div className="w-full md:w-2/3">
+            <div className="w-full md:w-3/4">
               <h3 className="text-2xl font-bold text-gray-900 mb-1">Kai Olufs</h3>
               <p className="text-gray-600 mb-8">Gesellschafter</p>
               <div className="text-gray-700 leading-relaxed text-lg space-y-4">

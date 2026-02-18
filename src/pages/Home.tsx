@@ -40,28 +40,28 @@ export default function Home() {
   return (
     <div className="bg-white">
       {/* Hero Section */}
-      <section className="min-h-[50vh] lg:min-h-screen flex items-center pt-20 lg:pt-32 px-6 lg:px-12">
+      <section className="min-h-[40vh] lg:min-h-screen flex items-center pt-20 lg:pt-32 px-6 lg:px-12">
         <div className="max-w-[1400px] mx-auto w-full">
           <div ref={heroRef} className="max-w-4xl">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-medium text-[#3A6B54] leading-tight">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-medium text-[#3A6B54] leading-normal pb-4">
               <span
-                className="block overflow-hidden"
+                className="block overflow-hidden pb-2"
               >
                 <span className="block animate-fade-in-up" style={{ animationDelay: '0.2s' }}>
                   farmWIND:
                 </span>
               </span>
-              <span className="block overflow-hidden">
+              <span className="block overflow-hidden pb-2">
                 <span className="block animate-fade-in-up" style={{ animationDelay: '0.3s' }}>
                   Ihr Partner für nachhaltige
                 </span>
               </span>
-              <span className="block overflow-hidden">
+              <span className="block overflow-hidden pb-2">
                 <span className="block animate-fade-in-up" style={{ animationDelay: '0.4s' }}>
                   Photovoltaik- und
                 </span>
               </span>
-              <span className="block overflow-hidden">
+              <span className="block overflow-hidden pb-2">
                 <span className="block animate-fade-in-up" style={{ animationDelay: '0.5s' }}>
                   Windkraftlösungen
                 </span>
@@ -97,8 +97,8 @@ export default function Home() {
         <div className="max-w-[1400px] mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-6">
             {/* Map Card - Spans 3 columns */}
-            <div
-              className="lg:col-span-3 group relative overflow-hidden rounded-2xl border border-gray-200 bg-white hover:shadow-xl hover:shadow-[#3A6B54]/10 transition-all duration-500 animate-fade-in-up cursor-pointer"
+            <button
+              className="lg:col-span-3 group relative overflow-hidden rounded-2xl border border-gray-200 bg-white lg:hover:shadow-xl lg:hover:shadow-[#3A6B54]/10 transition-all duration-500 animate-fade-in-up cursor-pointer w-full text-left p-0"
               style={{ animationDelay: '0.1s' }}
               onClick={() => handleNavClick('referenzen')}
             >
@@ -107,15 +107,15 @@ export default function Home() {
                   src="/assets/map.jpg"
                   alt="Map of Germany showing Schleswig-Holstein"
                   loading="lazy"
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                  className="w-full h-full object-cover transition-transform duration-700 lg:group-hover:scale-105"
                 />
               </div>
-            </div>
+            </button>
 
             {/* Unternehmen Card - Spans 2 columns */}
             <button
               onClick={() => handleNavClick('unternehmen')}
-              className="lg:col-span-2 group relative overflow-hidden rounded-2xl border border-gray-200 bg-white p-8 lg:p-10 hover:shadow-xl hover:shadow-[#3A6B54]/10 transition-all duration-500 hover:-translate-y-1 animate-fade-in-up text-left"
+              className="lg:col-span-2 group relative overflow-hidden rounded-2xl border border-gray-200 bg-white p-8 lg:p-10 lg:hover:shadow-xl lg:hover:shadow-[#3A6B54]/10 transition-all duration-500 lg:hover:-translate-y-1 animate-fade-in-up text-left"
               style={{ animationDelay: '0.2s' }}
             >
               <span className="text-sm text-gray-500 font-medium mb-4 block">Unternehmen</span>
@@ -131,7 +131,7 @@ export default function Home() {
             {/* Leistungen Card - Spans 3 columns */}
             <button
               onClick={() => handleNavClick('leistungen')}
-              className="lg:col-span-3 group relative overflow-hidden rounded-2xl border border-gray-200 bg-white p-8 lg:p-10 hover:shadow-xl hover:shadow-[#3A6B54]/10 transition-all duration-500 hover:-translate-y-1 animate-fade-in-up text-left"
+              className="lg:col-span-3 group relative overflow-hidden rounded-2xl border border-gray-200 bg-white p-8 lg:p-10 lg:hover:shadow-xl lg:hover:shadow-[#3A6B54]/10 transition-all duration-500 lg:hover:-translate-y-1 animate-fade-in-up text-left"
               style={{ animationDelay: '0.3s' }}
             >
               <span className="text-sm text-gray-500 font-medium mb-4 block">Leistungen</span>
@@ -147,7 +147,7 @@ export default function Home() {
             {/* Kontakt Card - Spans 2 columns */}
             <button
               onClick={() => handleNavClick('kontakt')}
-              className="lg:col-span-2 group relative overflow-hidden rounded-2xl border border-gray-200 bg-white p-8 lg:p-10 hover:shadow-xl hover:shadow-[#3A6B54]/10 transition-all duration-500 hover:-translate-y-1 animate-fade-in-up text-left"
+              className="lg:col-span-2 group relative overflow-hidden rounded-2xl border border-gray-200 bg-white p-8 lg:p-10 lg:hover:shadow-xl lg:hover:shadow-[#3A6B54]/10 transition-all duration-500 lg:hover:-translate-y-1 animate-fade-in-up text-left"
               style={{ animationDelay: '0.4s' }}
             >
               <span className="text-sm text-gray-500 font-medium mb-4 block">Kontakt</span>

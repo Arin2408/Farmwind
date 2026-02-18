@@ -71,7 +71,7 @@ export default function Navbar({ onNavigate, currentPage }: NavbarProps) {
               <button
                 key={link.page}
                 onClick={() => handleNavClick(link.page)}
-                className={`relative text-[15px] font-medium transition-all duration-300 animate-fade-in-up ${isActive(link.page)
+                className={`relative text-base font-medium transition-all duration-300 animate-fade-in-up ${isActive(link.page)
                   ? 'text-[#3A6B54]'
                   : 'text-gray-700 hover:text-[#3A6B54]'
                   }`}
@@ -117,7 +117,7 @@ export default function Navbar({ onNavigate, currentPage }: NavbarProps) {
                 onClick={() => handleNavClick(link.page)}
                 className={`text-base font-medium transition-colors text-left ${isActive(link.page)
                   ? 'text-[#3A6B54]'
-                  : 'text-gray-700 hover:text-[#3A6B54]'
+                  : 'text-gray-700 lg:hover:text-[#3A6B54]'
                   }`}
               >
                 {link.name}
