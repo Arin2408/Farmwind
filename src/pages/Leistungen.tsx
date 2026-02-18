@@ -84,10 +84,9 @@ export default function Leistungen({ onNavigate }: LeistungenProps) {
             <div className="max-w-[1400px] mx-auto px-6 lg:px-12 w-full">
               <div className="max-w-xl animate-fade-in-up">
                 <h1 className="text-4xl sm:text-5xl lg:text-6xl font-medium text-white leading-tight">
-                  farmWIND –<br />
-                  Ihr Partner<br />
-                  von der Idee<br />
-                  bis zur<br />
+                  farmWIND – Ihr Partner
+                  von der Idee
+                  bis zur
                   Umsetzung
                 </h1>
               </div>
