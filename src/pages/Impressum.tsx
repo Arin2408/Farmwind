@@ -26,7 +26,10 @@ export default function Impressum() {
                   <br />
                   Sitz der Gesellschaft: Flensburg<br />
                   Handelsregister: HRB 16956 FL<br />
-                  Registergericht: Flensburg
+                  Registergericht: Flensburg<br />
+                  <br />
+                  Vertreten durch:<br />
+                  Arne Henn, Julia Schindler
                 </p>
               </div>
 
