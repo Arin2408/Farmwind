@@ -2,9 +2,7 @@ import { useEffect, useRef } from 'react';
 
 type Page = 'home' | 'leistungen' | 'unternehmen' | 'landeigentuemer' | 'flaechenpruefung' | 'referenzen' | 'kontakt' | 'impressum' | 'datenschutz';
 
-interface LeistungenProps {
-  onNavigate?: (page: Page) => void;
-}
+
 
 const planungServices = [
   'Standortanalyse und Vorplanung',
@@ -33,7 +31,7 @@ const umsetzungServices = [
   'Ausgleichsmaßnahmen',
 ];
 
-export default function Leistungen({ onNavigate }: LeistungenProps) {
+export default function Leistungen() {
   const sectionRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -56,9 +54,8 @@ export default function Leistungen({ onNavigate }: LeistungenProps) {
   }, []);
 
   const handleNavClick = (page: Page) => {
-    if (onNavigate) {
-      onNavigate(page);
-    }
+    window.dispatchEvent(new CustomEvent('navigate', { detail: page }));
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (
