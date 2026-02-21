@@ -84,7 +84,7 @@ export default function Home() {
       </section>
 
       {/* Services Introduction */}
-      <section className="py-24 lg:py-32 px-6 lg:px-12 bg-white">
+      <section className="pt-12 pb-12 lg:pt-20 lg:pb-20 px-6 lg:px-12 bg-white">
         <div className="max-w-[1400px] mx-auto text-center">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-medium text-[#3A6B54] leading-relaxed max-w-3xl mx-auto animate-fade-in-up">
             Entdecken Sie unsere Vielfalt an Dienstleistungen: Ihr Wegweiser durch farmWIND
@@ -92,8 +92,9 @@ export default function Home() {
         </div>
       </section>
 
+
       {/* Bento Grid Section */}
-      <section className="py-12 lg:py-32 px-6 lg:px-12 bg-white">
+      <section className="pt-8 pb-12 lg:pt-12 lg:pb-16 px-6 lg:px-12 bg-white">
         <div className="max-w-[1400px] mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-5 gap-6">
             {/* Map Card - Spans 3 columns */}
