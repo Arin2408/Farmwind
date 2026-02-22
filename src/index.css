@@ -26,7 +26,7 @@
     --input: 150 20% 90%;
     --ring: 150 30% 32%;
     --radius: 0.625rem;
-    
+
     /* Custom farmWIND colors */
     --farm-green: 150 30% 32%;
     --farm-green-dark: 150 30% 24%;
@@ -38,11 +38,11 @@
   * {
     @apply border-border;
   }
-  
+
   html {
     scroll-behavior: smooth;
   }
-  
+
   body {
     @apply bg-background text-foreground antialiased;
     font-family: 'Inter', sans-serif;
@@ -53,11 +53,11 @@
   .text-balance {
     text-wrap: balance;
   }
-  
+
   .custom-expo {
     transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
   }
-  
+
   .soft-bounce {
     transition-timing-function: cubic-bezier(0.34, 1.56, 0.64, 1);
   }
@@ -87,6 +87,7 @@
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -98,6 +99,7 @@
     opacity: 0;
     transform: translateY(-100%);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -109,6 +111,7 @@
     opacity: 0;
     transform: scale(0.8);
   }
+
   to {
     opacity: 1;
     transform: scale(1);
@@ -116,9 +119,12 @@
 }
 
 @keyframes breathe {
-  0%, 100% {
+
+  0%,
+  100% {
     letter-spacing: 0px;
   }
+
   50% {
     letter-spacing: 2px;
   }
