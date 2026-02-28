@@ -8,6 +8,8 @@ export default function Kontakt() {
   });
 
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSending, setIsSending] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -28,9 +30,31 @@ export default function Kontakt() {
     return () => observer.disconnect();
   }, []);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setIsSubmitted(true);
+    setIsSending(true);
+    setError(null);
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData)
+      });
+
+      if (response.ok) {
+        setIsSubmitted(true);
+      } else {
+        const data = await response.json();
+        setError(data.message || 'Es gab ein Problem beim Senden Ihrer Nachricht. Bitte versuchen Sie es später erneut.');
+      }
+    } catch (err) {
+      setError('Es gab ein Problem beim Senden Ihrer Nachricht. Bitte versuchen Sie es später erneut.');
+    } finally {
+      setIsSending(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -117,12 +141,22 @@ export default function Kontakt() {
                   />
                 </div>
 
+                {error && (
+                  <p className="text-red-500 text-sm">{error}</p>
+                )}
+
                 <div>
                   <button
                     type="submit"
-                    className="px-10 py-3 bg-[#1E5D48] text-white font-medium rounded-full hover:bg-[#164a38] transition-colors duration-300 text-lg"
+                    disabled={isSending}
+                    className="px-10 py-3 bg-[#1E5D48] text-white font-medium rounded-full hover:bg-[#164a38] transition-colors duration-300 text-lg disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
                   >
-                    Senden
+                    {isSending ? (
+                      <>
+                        <span className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></span>
+                        Sendet...
+                      </>
+                    ) : 'Senden'}
                   </button>
                 </div>
               </form>

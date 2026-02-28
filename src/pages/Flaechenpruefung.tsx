@@ -24,6 +24,8 @@ export default function Flaechenpruefung() {
   });
 
   const [isSubmitted, setIsSubmitted] = useState(false);
+  const [isSending, setIsSending] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -44,11 +46,35 @@ export default function Flaechenpruefung() {
     return () => observer.disconnect();
   }, []);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Simulate form submission
-    setIsSubmitted(true);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    setIsSending(true);
+    setError(null);
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          ...formData,
+          subject: 'Neue Flächenprüfungs-Anfrage'
+        })
+      });
+
+      if (response.ok) {
+        setIsSubmitted(true);
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else {
+        const data = await response.json();
+        setError(data.message || 'Es gab ein Problem beim Senden Ihrer Anfrage. Bitte versuchen Sie es später erneut.');
+      }
+    } catch (err) {
+      setError('Es gab ein Problem beim Senden Ihrer Anfrage. Bitte versuchen Sie es später erneut.');
+    } finally {
+      setIsSending(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -299,12 +325,22 @@ export default function Flaechenpruefung() {
                 />
               </div>
 
+              {error && (
+                <p className="text-red-500 text-sm">{error}</p>
+              )}
+
               <div className="pt-4">
                 <button
                   type="submit"
-                  className="px-8 py-3 bg-[#1E5D48] text-white font-medium rounded-full hover:bg-[#164a38] transition-colors duration-300"
+                  disabled={isSending}
+                  className="px-8 py-3 bg-[#1E5D48] text-white font-medium rounded-full hover:bg-[#164a38] transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2"
                 >
-                  Anfrage senden
+                  {isSending ? (
+                    <>
+                      <span className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></span>
+                      Sendet...
+                    </>
+                  ) : 'Anfrage senden'}
                 </button>
               </div>
             </form>
