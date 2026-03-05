@@ -81,6 +81,59 @@ export default function Unternehmen() {
         </h2>
 
         <div className="space-y-24">
+          {/* Arne Henn */}
+          <div className="flex flex-col md:flex-row gap-12 items-start animate-on-scroll">
+            <div className="w-full md:w-1/4 max-w-xs aspect-square bg-[#f0f0f0] rounded-sm overflow-hidden">
+              <img
+                src="/assets/jullia.jpg"
+                alt="Julia Schindler"
+                loading="lazy"
+                className="w-full h-full object-cover grayscale"
+              />
+            </div>
+            <div className="w-full md:w-3/4">
+              <h3 className="text-2xl font-bold text-gray-900 mb-1">Julia Schindler</h3>
+              <p className="text-gray-600 mb-8">Geschäftsführer</p>
+              <div className="text-gray-700 leading-relaxed text-lg space-y-4">
+                {/* <p>
+                  Arne Henn absolvierte sein Studium im Jahr 1990 an der Fachhochschule Hamburg mit einem Masterabschluss im Studiengang
+                  Flugzeugbau. Nach mehrjähriger internationaler Tätigkeit im Bereich Triebwerksinstandsetzung und Maintenance“ ist Arne Henn seit
+                  dem Jahr 2000 in der Projektentwicklung und in der Realisierung von Windenergieprojekten im In- und Ausland mit mehr als 32
+                  realisierten Windparks erfolgreich tätig.
+                </p>
+                <p>
+                  Arne Henn führt verschiedene Gesellschaften im Bereich Wind und PV.
+                </p> */}
+              </div>
+            </div>
+          </div>
+
+          {/* Arne Henn */}
+          <div className="flex flex-col md:flex-row gap-12 items-start animate-on-scroll">
+            <div className="w-full md:w-1/4 max-w-xs aspect-square bg-[#f0f0f0] rounded-sm overflow-hidden">
+              <img
+                src="/assets/arne.jpg"
+                alt="Dipl. Ing. Arne Henn"
+                loading="lazy"
+                className="w-full h-full object-cover grayscale"
+              />
+            </div>
+            <div className="w-full md:w-3/4">
+              <h3 className="text-2xl font-bold text-gray-900 mb-1">Dipl. Ing. Arne Henn</h3>
+              <p className="text-gray-600 mb-8">Geschäftsführer</p>
+              <div className="text-gray-700 leading-relaxed text-lg space-y-4">
+                <p>
+                  Arne Henn absolvierte sein Studium im Jahr 1990 an der Fachhochschule Hamburg mit einem Masterabschluss im Studiengang
+                  Flugzeugbau. Nach mehrjähriger internationaler Tätigkeit im Bereich Triebwerksinstandsetzung und Maintenance“ ist Arne Henn seit
+                  dem Jahr 2000 in der Projektentwicklung und in der Realisierung von Windenergieprojekten im In- und Ausland mit mehr als 32
+                  realisierten Windparks erfolgreich tätig.
+                </p>
+                <p>
+                  Arne Henn führt verschiedene Gesellschaften im Bereich Wind und PV.
+                </p>
+              </div>
+            </div>
+          </div>
           {/* Thomas Griffith */}
           <div className="flex flex-col md:flex-row gap-12 items-start animate-on-scroll">
             <div className="w-full md:w-1/4 max-w-xs aspect-square bg-[#f0f0f0] rounded-sm overflow-hidden">
@@ -93,7 +146,7 @@ export default function Unternehmen() {
             </div>
             <div className="w-full md:w-3/4">
               <h3 className="text-2xl font-bold text-gray-900 mb-1">Thomas Griffith</h3>
-              <p className="text-gray-600 mb-8">Gesellschafter</p>
+              <p className="text-gray-600 mb-8"></p>
               <div className="text-gray-700 leading-relaxed text-lg space-y-4">
                 <p>
                   Als ausgebildeter Sparkassenbetriebswirt begann Thomas Griffith 2003 seine Karriere als Firmenkundenberater und spezialisierte
@@ -111,32 +164,7 @@ export default function Unternehmen() {
             </div>
           </div>
 
-          {/* Arne Henn */}
-          <div className="flex flex-col md:flex-row gap-12 items-start animate-on-scroll">
-            <div className="w-full md:w-1/4 max-w-xs aspect-square bg-[#f0f0f0] rounded-sm overflow-hidden">
-              <img
-                src="/assets/arne.jpg"
-                alt="Dipl. Ing. Arne Henn"
-                loading="lazy"
-                className="w-full h-full object-cover grayscale"
-              />
-            </div>
-            <div className="w-full md:w-3/4">
-              <h3 className="text-2xl font-bold text-gray-900 mb-1">Dipl. Ing. Arne Henn</h3>
-              <p className="text-gray-600 mb-8">Gesellschafter-Geschäftsführer</p>
-              <div className="text-gray-700 leading-relaxed text-lg space-y-4">
-                <p>
-                  Arne Henn absolvierte sein Studium im Jahr 1990 an der Fachhochschule Hamburg mit einem Masterabschluss im Studiengang
-                  Flugzeugbau. Nach mehrjähriger internationaler Tätigkeit im Bereich „Triebwerksinstandsetzung und Maintenance“ ist Arne Henn seit
-                  dem Jahr 2000 in der Projektentwicklung und in der Realisierung von Windenergieprojekten im In- und Ausland mit mehr als 32
-                  realisierten Windparks erfolgreich tätig.
-                </p>
-                <p>
-                  Arne Henn führt verschiedene Gesellschaften im Bereich Wind und PV.
-                </p>
-              </div>
-            </div>
-          </div>
+
 
           {/* Carsten Jensen */}
           <div className="flex flex-col md:flex-row gap-12 items-start animate-on-scroll">
@@ -150,7 +178,7 @@ export default function Unternehmen() {
             </div>
             <div className="w-full md:w-3/4">
               <h3 className="text-2xl font-bold text-gray-900 mb-1">Carsten Jensen</h3>
-              <p className="text-gray-600 mb-8">Gesellschafter</p>
+              <p className="text-gray-600 mb-8"></p>
               <div className="text-gray-700 leading-relaxed text-lg space-y-4">
                 <p>
                   Carsten Jensen, Landwirt und Landwirtschaftsmeister seit 1990, bewirtschaftet erfolgreich Ackerflächen und Vieh in Nordfriesland.
@@ -176,7 +204,7 @@ export default function Unternehmen() {
             </div>
             <div className="w-full md:w-3/4">
               <h3 className="text-2xl font-bold text-gray-900 mb-1">Kristian Schachlewitz</h3>
-              <p className="text-gray-600 mb-8">Gesellschafter & Prokurist</p>
+              <p className="text-gray-600 mb-8"></p>
               <div className="text-gray-700 leading-relaxed text-lg space-y-4">
                 <p>
                   Kristian Schachlewitz hat 2004 als Entwickler und Bauleiter in der Immobilienbranche begonnen. 2006 wurde er geschäftsführender
@@ -200,7 +228,7 @@ export default function Unternehmen() {
             </div>
             <div className="w-full md:w-3/4">
               <h3 className="text-2xl font-bold text-gray-900 mb-1">Dr. Arne Scheschonk</h3>
-              <p className="text-gray-600 mb-8">Gesellschafter</p>
+              <p className="text-gray-600 mb-8"></p>
               <div className="text-gray-700 leading-relaxed text-lg space-y-4">
                 <p>
                   Dr. Arne Scheschonk ist Selbstständiger Rechtsanwalt seit 2008 und Gründer der CTCAP Holding GmbH. Zuvor Rechtsanwalt in Prag,
@@ -225,7 +253,7 @@ export default function Unternehmen() {
             </div>
             <div className="w-full md:w-3/4">
               <h3 className="text-2xl font-bold text-gray-900 mb-1">Lorenz Peter Jensen</h3>
-              <p className="text-gray-600 mb-8">Gesellschafter</p>
+              <p className="text-gray-600 mb-8"></p>
               <div className="text-gray-700 leading-relaxed text-lg space-y-4">
                 <p>
                   Seit 1992 ist Lorenz Peter Jensen in der Landwirtschaft tätig, bevor er im Jahr 1999 seinen Fokus auf erneuerbare Energien richtete.
@@ -250,7 +278,7 @@ export default function Unternehmen() {
             </div>
             <div className="w-full md:w-3/4">
               <h3 className="text-2xl font-bold text-gray-900 mb-1">Kai Olufs</h3>
-              <p className="text-gray-600 mb-8">Gesellschafter</p>
+              <p className="text-gray-600 mb-8"></p>
               <div className="text-gray-700 leading-relaxed text-lg space-y-4">
                 <p>
                   Kai Olufs, Agrarbetriebswirt und seit 2003 Betriebsinhaber eines landwirtschaftlichen Betriebes. Die erste Windenergieanlage wurde
