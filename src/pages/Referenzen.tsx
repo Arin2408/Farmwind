@@ -23,7 +23,6 @@ export default function Referenzen() {
 
   const handleContactClick = () => {
     window.dispatchEvent(new CustomEvent('navigate', { detail: 'kontakt' }));
-    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (

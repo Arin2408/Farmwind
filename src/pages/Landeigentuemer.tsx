@@ -23,7 +23,6 @@ export default function Landeigentuemer() {
 
   const handleContactClick = () => {
     window.dispatchEvent(new CustomEvent('navigate', { detail: 'kontakt' }));
-    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const handleMoreInfoClick = () => {

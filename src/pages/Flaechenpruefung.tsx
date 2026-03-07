@@ -65,7 +65,6 @@ export default function Flaechenpruefung() {
 
       if (response.ok) {
         setIsSubmitted(true);
-        window.scrollTo({ top: 0, behavior: 'smooth' });
       } else {
         const data = await response.json();
         setError(data.message || 'Es gab ein Problem beim Senden Ihrer Anfrage. Bitte versuchen Sie es später erneut.');

@@ -55,7 +55,6 @@ export default function Leistungen() {
 
   const handleNavClick = (page: Page) => {
     window.dispatchEvent(new CustomEvent('navigate', { detail: page }));
-    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (

@@ -19,8 +19,12 @@ function App() {
   // Handle navigation
   const navigate = (page: Page) => {
     setCurrentPage(page);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
+
+  // Scroll to top on page change
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [currentPage]);
 
   // Listen for navigation events from Navbar
   useEffect(() => {

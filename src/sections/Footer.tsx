@@ -16,7 +16,6 @@ const navLinks: { name: string; page: Page }[] = [
 export default function Footer({ onNavigate }: FooterProps) {
   const handleNavClick = (page: Page) => {
     onNavigate(page);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   return (

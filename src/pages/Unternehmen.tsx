@@ -93,7 +93,7 @@ export default function Unternehmen() {
             </div>
             <div className="w-full md:w-3/4">
               <h3 className="text-2xl font-bold text-gray-900 mb-1">Julia Schindler</h3>
-              <p className="text-gray-600 mb-8">Geschäftsführer</p>
+              <p className="text-gray-600 mb-8">Geschäftsführerin</p>
               <div className="text-gray-700 leading-relaxed text-lg space-y-4">
                 {/* <p>
                   Arne Henn absolvierte sein Studium im Jahr 1990 an der Fachhochschule Hamburg mit einem Masterabschluss im Studiengang
@@ -303,7 +303,6 @@ export default function Unternehmen() {
         <button
           onClick={() => {
             window.dispatchEvent(new CustomEvent('navigate', { detail: 'kontakt' }));
-            window.scrollTo({ top: 0, behavior: 'smooth' });
           }}
           className="inline-block px-8 py-3 border border-[#1E5D48] rounded-full text-[#1E5D48] hover:bg-[#1E5D48] hover:text-white transition-colors duration-300 text-lg"
         >
